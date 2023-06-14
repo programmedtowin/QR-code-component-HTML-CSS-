@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+/* General */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "outfit", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  background-color: hsl(212, 45%, 89%);
+}
+
+.parent {
+  /* I needed to add height to 100vh for the QR card to center vertically on page */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* QR code's code */
+
+.card-container {
+  margin: 0 20px;
+  padding: 15px;
+  border-radius: 20px;
+  background-color: hsl(0, 0%, 100%);
+  width: 255px;
+}
+
+img {
+  width: 100%;
+}
+
+.qr-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.qr-image {
+  border-radius: 10px;
+}
+
+/* QR Text code*/
+p {
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+.bold-text {
+  font-size: 17px;
+  font-weight: 700;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: hsl(218, 44%, 22%);
+}
+
+.normal-text {
+  font-weight: 400;
+  color: hsl(220, 15%, 55%);
+  margin-bottom: 15px;
+}
